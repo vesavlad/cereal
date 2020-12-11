@@ -1,0 +1,11 @@
+version: "1"
+rules:
+  - base: master
+    upstream: USCiLab:master        # Required. Can be a branch in the same forked repo.
+    mergeMethod: merge
+    assignees:              # Optional
+      - vesavlad
+    reviewers:              # Optional
+      - vesavlad
+    conflictReviewers:      # Optional, on merge conflict assign a reviewer
+      - vesavlad
